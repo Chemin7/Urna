@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1645722212 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 6\urna\main.cpp
+	<iostream>
+	"equipo.h"
+	"validate.h"
+
+1645722084 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 6\urna\equipo.h
+	<string>
+
+1645716369 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 6\urna\validate.h
+	<string>
+
