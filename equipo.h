@@ -1,29 +1,32 @@
 #ifndef EQUIPO_H_INCLUDED
 #define EQUIPO_H_INCLUDED
 #include <string>
-
-class Team{
+#include "urna.h"
+class Team: public Urna{
 private:
     int votes;
-
     std::string name;
-    float percentage;
-
-    void setPercentage();
 
 public:
+    Team();
     Team(std::string);
 
-    void setPercentage(int& );
+    void setPercentage(float);
 
-    int getVotes();
     float getPercentage();
+    int getVotes();
 
     Team& operator++ ();
 
 
 };
 using namespace std;
+
+Team::Team()
+{
+
+}
+
 
 Team::Team(string n)
 {
@@ -42,10 +45,10 @@ Team& Team::operator++()
 
 
 
-void Team::setPercentage(int& totalVotes)
+void Team::setPercentage(float p)
 {
 
-    percentage = votes*100 /totalVotes;
+    percentage = p;
 }
 
 

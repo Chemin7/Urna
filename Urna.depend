@@ -10,3 +10,19 @@
 1645716369 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 6\urna\validate.h
 	<string>
 
+1645734267 source:c:\users\usuario\documents\proyectos\urna\main.cpp
+	<iostream>
+	"equipo.h"
+	"urna.h"
+	"validate.h"
+
+1645734269 c:\users\usuario\documents\proyectos\urna\equipo.h
+	<string>
+	"urna.h"
+
+1645730262 c:\users\usuario\documents\proyectos\urna\validate.h
+	<string>
+
+1645734380 c:\users\usuario\documents\proyectos\urna\urna.h
+	"equipo.h"
+

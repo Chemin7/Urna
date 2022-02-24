@@ -3,16 +3,19 @@
 #include "equipo.h"
 
 class Urna{
-private:
-    Equipo data[10];
-    int votosTotal;
-
-
+protected:
+    float percentage;
 public:
-
-
-
-
+    void setPorcentajeTotal(int ,int, int,int );
 };
+
+void Urna::setPorcentajeTotal(int a, int b, int c,int voto)
+{
+    int  totalVotes =  a + b +c;
+
+    percentage = voto *100 / totalVotes;
+}
+
+
 
 #endif // URNA_H_INCLUDED

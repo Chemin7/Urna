@@ -1,5 +1,6 @@
 #include <iostream>
 #include "equipo.h"
+#include "urna.h"
 #include "validate.h"
 using namespace std;
 
@@ -10,6 +11,7 @@ void menu() {
     Team atlas("Atlas");
     Team chivas("Chivas");
     Team toluca("Toluca");
+    Urna u;
 
     do {
         cout<<"Menu"<<endl;
@@ -26,21 +28,22 @@ void menu() {
         switch(opc) {
             case 1:
                 ++atlas;
-                totalvotes++;
+
                 break;
             case 2:
                 ++chivas;
-                totalvotes++;
+
                 break;
             case 3:
                 ++toluca;
-                totalvotes++;
+
 
                 break;
             }
-        atlas.setPercentage(totalvotes);
-        chivas.setPercentage(totalvotes);
-        toluca.setPercentage(totalvotes);
+
+        atlas.setPorcentajeTotal(atlas.getVotes(),chivas.getVotes(),toluca.getVotes(),atlas.getVotes());
+        chivas.setPorcentajeTotal(atlas.getVotes(),chivas.getVotes(),toluca.getVotes(),chivas.getVotes());
+        toluca.setPorcentajeTotal(atlas.getVotes(),chivas.getVotes(),toluca.getVotes(),toluca.getVotes());
 
         cout<<"*********VOTOS**********"<<endl;
         cout<<" Atlas: "<<atlas.getVotes()<<endl;
